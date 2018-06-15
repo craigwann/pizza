@@ -4,7 +4,6 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 };
 
-
 function sizePrice(size) {
   if (size ==="Large") {
     return 15;
@@ -21,8 +20,6 @@ Pizza.prototype.cost = function() {
   var totalCost = toppingPrice + sizeCost;
   return totalCost;
 };
-// console.log(mine.cost());
-
 
 //front END
 $(document).ready(function(){
