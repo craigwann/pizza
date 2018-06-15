@@ -1,10 +1,15 @@
-function Pizza(size, toppings, price) {
+function Pizza(size, toppings, myPrice) {
   this.size = size;
   this.toppings = toppings;
-  this.price = 0;
 };
 
-Pizza.prototype.cost = function () {
-  cost = parseInt(this.toppings.lenghth + 10);
-  return cost;
+Pizza.prototype.cost = function() {
+  var toppingPrice = this.toppings.lenghth;
+  var sizePrice = 10;
+  var total = toppingPrice + sizePrice;
+  return totalPrice;
 };
+
+mine = new Pizza("medium", ["pepperoni", "mushrooms", "olives"] );
+
+console.log(mine.cost());
