@@ -21,35 +21,56 @@
             <div class="col-md-4">
               <div class="form-group">
                 <h3>Select Pizza toppings:</h3>
-                <input type="checkbox" name="pizza-toppings" value="pepperoni">Pepperoni<br>
-                <input type="checkbox" name="pizza-toppings" value="cBacon">Canadian Bacon<br>
-                <input type="checkbox" name="pizza-toppings" value="mushrooms">Mushrooms<br>
-                <input type="checkbox" name="pizza-toppings" value="olives">Olives<br>
+                <input type="checkbox" name="pizza-toppings" value="Pepperoni">Pepperoni<br>
+                <input type="checkbox" name="pizza-toppings" value="Canadian Bacon">Canadian Bacon<br>
+                <input type="checkbox" name="pizza-toppings" value="Mushrooms">Mushrooms<br>
+                <input type="checkbox" name="pizza-toppings" value="Olives">Olives<br>
               </div>
             </div>
 
             <div class="col-md-4">
               <h3>Select Pizza Size:</h3>
-              <select class="form-control" id="size">
-                <option value="1">Small</option>
-                <option value="2">Medium</option>
-                <option value="3">Large</option>
-              </select>
-            </div>
-            <button type="submit">Order Pizza</button>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="Small">
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="Medium">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="pizzaSize" value="Large">
+                  Large
+                </label>
+              </div>
 
+              <!-- <select class="form-control" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select> -->
+            </div>
+
+            <div class="col-md-4">
+              <button type="submit">Order Pizza</button>
+            </div>
 
           </form>
       </div>
 
-      <!-- <div class="well"> -->
+      <div class="well">
 
         <span id="result">
-          <p><b>You ordered:</b></p>
+          <h1>You ordered:</h1>
         </span>
         <br>
 
-      <!-- </div> -->
+      </div>
     </div>
 
 

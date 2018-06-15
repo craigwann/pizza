@@ -27,13 +27,17 @@ Pizza.prototype.cost = function() {
 
 //front END
 $(document).ready(function(){
-  $("form#pizza-toppings").submit(function(event){
+  $("form#OrderForm").submit(function(event){
     event.preventDefault();
     $("#result").show();
+
+    var sizeInput = $("input:radio[name=pizzaSize]:checked").val();
+    $('#result').append('<h3>' + sizeInput + '</h3>' + "<br>");
+
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       var pizzaOrder = $(this).val();
-      $('#result').append(pizzaToppings + "<br>");
+      $('#result').append(pizzaOrder + "<br>");
     });
-    // $('#OrderForm').hide();
+    $('#OrderForm').hide();
   });
 });
