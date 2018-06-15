@@ -1,41 +1,46 @@
-# address-book
+# Beep Boop
 
-##### Epicodus Section: JavaScript OO - Address Book
+#### A program that allows users to build a custom imaginary pizza.
 
-#### By Epicodus Lessons
+#### By **Craig Wann**
+6/15/2018
+revised 6/14/2018
 
 ## Description
 
-This application is a demonstration of constructors and prototypes using JavaScript to create a simple Address Book app.
+A web application that allows users to enter a number and returns a series of numbers from 0 to that number with exceptions.
 
-## Setup
 
-Install address-book by cloning this repository.
+### Specifications
+| Spec | Example Input | Example Output |
+| :-------------     | :------------- | :------------- |
+| **spec 1 ** | 5 | output |
+| **spec 2** | 3 | output |
+| **spec 3 **| 3 | output |
+| **spec 4**| 10 | output |
+
+
+
+## Setup/Installation Requirements
+
+1. Clone this repository.
+2. Open the index.html file in your favorite web browser.
+
+## Known Bugs
+* No known bugs at this time.
 
 ## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* jQuery
 
-JavaScript and jQuery
+## Support and contact details
 
-### Legal
+_Email no one with any questions, comments, or concerns._
 
-Copyright (c) 2015 **Epicodus**
+### License
 
-This software is licensed under the MIT license.
+*{This software is licensed under the MIT license}*
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Copyright (c) 2018 **_{Craig Wann}_**
