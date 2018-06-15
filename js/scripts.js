@@ -29,9 +29,9 @@ Pizza.prototype.cost = function() {
 $(document).ready(function(){
   $("form#pizza-toppings").submit(function(event){
     event.preventDefault();
-    $("#results").show();
+    $("#result").show();
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
-      var pizzaToppings = $(this).val();
+      var pizzaOrder = $(this).val();
       $('#result').append(pizzaToppings + "<br>");
     });
     // $('#OrderForm').hide();
