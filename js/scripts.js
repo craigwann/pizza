@@ -4,6 +4,8 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 };
 
+var mine = new Pizza("Medium", ["Pepperoni", "Mushrooms", "Olives"])
+
 function sizePrice(size) {
   if (size ==="Large") {
     return 15;
@@ -14,8 +16,8 @@ function sizePrice(size) {
   }
 };
 
-Pizza.prototype.cost = function() {
-  var toppingPrice = this.toppings.lenghth * 2;
+Pizza.prototype.pizzaTotal = function() {
+  var toppingPrice = this.toppings.length * 2;
   var sizeCost = sizePrice(this.size);
   var totalCost = toppingPrice + sizeCost;
   return totalCost;
@@ -25,25 +27,22 @@ Pizza.prototype.cost = function() {
 $(document).ready(function(){
   $("form#OrderForm").submit(function(event){
     event.preventDefault();
-
     $("#result").show();
-
     var toppingArray = [];
-
     var sizeInput = $("input:radio[name=pizzaSize]:checked").val();
     $('#result').append('<h3>' + sizeInput + '</h3>' + "<br>");
-
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       var toppingInput = $(this).val();
-      $('#result').append(toppingInput + "<br>");
       toppingArray.push(toppingInput);
+      $('#result').append(toppingInput + "<br>");
     });
 
-
     var order = new Pizza(sizeInput, toppingArray);
-    var total = order.cost();
 
-    $('#result').append('<h3>' + total + '</h3>' + "<br>");
+    var total = order.pizzaTotal();
+
+
+    $('#result').append('<h3>Your Total: $' + total + '</h3>' + "<br>");
 
     $('#OrderForm').hide();
   });
