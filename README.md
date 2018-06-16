@@ -14,8 +14,8 @@ A web application that allows users to enter a number and returns a series of nu
 ### Specifications
 | Spec | Example Input | Example Output |
 | :-------------     | :------------- | :------------- |
-| **spec 1 ** | 5 | output |
-| **spec 2** | 3 | output |
+| **base pricing structure:** toppings $2/ea & size: 5, 10, 15  | large 2 topping pizza | $19 |
+| **no toppings selected** | 3 | output |
 | **spec 3 **| 3 | output |
 | **spec 4**| 10 | output |
 

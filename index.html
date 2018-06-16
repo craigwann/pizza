@@ -20,11 +20,17 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <h3>Select Pizza toppings:</h3>
-                <input type="checkbox" name="pizza-toppings" value="Pepperoni">Pepperoni<br>
-                <input type="checkbox" name="pizza-toppings" value="Canadian Bacon">Canadian Bacon<br>
-                <input type="checkbox" name="pizza-toppings" value="Mushrooms">Mushrooms<br>
-                <input type="checkbox" name="pizza-toppings" value="Olives">Olives<br>
+                <div class="well">
+                  <h3>Select Pizza toppings:</h3>
+                  <input type="checkbox" name="pizza-toppings" value="Cheese only">Cheese Only<br>
+                  <h4>Meats:</h4>
+                  <input type="checkbox" name="pizza-toppings" value="Pepperoni">Pepperoni<br>
+                  <input type="checkbox" name="pizza-toppings" value="Canadian Bacon">Canadian Bacon<br>
+                  <h4>Veggies:</h4>
+                  <input type="checkbox" name="pizza-toppings" value="Mushrooms">Mushrooms<br>
+                  <input type="checkbox" name="pizza-toppings" value="Olives">Olives<br>
+                </div>
+
               </div>
             </div>
 
@@ -57,7 +63,10 @@
             </div>
 
             <div class="col-md-4">
-              <button type="submit">Order Pizza</button>
+              <div class="well">
+                <button class="btn" type="submit">Order Pizza</button>
+              </div>
+
             </div>
 
           </form>
