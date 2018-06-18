@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
+        <img src="img/pizza.png">
         <h1>Custom Pizza</h1>
       </div>
 
@@ -26,9 +27,16 @@
                   <h4>Meats:</h4>
                   <input type="checkbox" name="pizza-toppings" value="Pepperoni">Pepperoni<br>
                   <input type="checkbox" name="pizza-toppings" value="Canadian Bacon">Canadian Bacon<br>
+                  <input type="checkbox" name="pizza-toppings" value="Sausage">Sausage<br>
+                  <input type="checkbox" name="pizza-toppings" value="Chicken">Chicken<br>
+
                   <h4>Veggies:</h4>
                   <input type="checkbox" name="pizza-toppings" value="Mushrooms">Mushrooms<br>
                   <input type="checkbox" name="pizza-toppings" value="Olives">Olives<br>
+                  <input type="checkbox" name="pizza-toppings" value="Tomatoes">Tomatoes<br>
+                  <input type="checkbox" name="pizza-toppings" value="Onions">Onions<br>
+                  <input type="checkbox" name="pizza-toppings" value="Green Peppers">Green Peppers<br>
+
                 </div>
 
               </div>
@@ -64,7 +72,8 @@
 
             <div class="col-md-4">
               <div class="well">
-                <button class="btn" type="submit">Order Pizza</button>
+                <button class="btn btn-primary" type="submit">Order Pizza</button>
+                <!-- <button id="anotherPizza" class="btn btn-info" type="button">Order Another Pizza</button> -->
               </div>
 
             </div>
@@ -76,9 +85,10 @@
 
         <span id="result">
           <h1>You ordered:</h1>
+          <!-- <button id="anotherPizza" class="btn btn-info" type="button">Order Another Pizza</button> -->
+
         </span>
         <br>
-
       </div>
     </div>
 

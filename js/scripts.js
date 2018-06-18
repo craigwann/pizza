@@ -27,11 +27,12 @@ Pizza.prototype.pizzaTotal = function() {
 $(document).ready(function(){
   $("form#OrderForm").submit(function(event){
     event.preventDefault();
+
+
     if ($("input[type='checkbox']:checked").length === 0) {
       alert("You must select at least one topping");
       window.location.reload(false);
     }
-
 
     $("#result").show();
     var toppingArray = [];
@@ -44,10 +45,6 @@ $(document).ready(function(){
       $('#result').append(toppingInput + "<br>");
     });
 
-    // alert("toppingArray="toppingArray);
-    // if (toppingArray.length <0 || toppingArray == undefined) {
-    //   $('#result').append("Cheese only" + "<br>");
-    // };
     var order = new Pizza(sizeInput, toppingArray);
 
     var total = order.pizzaTotal();
@@ -57,4 +54,5 @@ $(document).ready(function(){
 
     $('#OrderForm').hide();
   });
+
 });
