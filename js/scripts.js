@@ -54,5 +54,7 @@ $(document).ready(function(){
 
     $('#OrderForm').hide();
   });
-
+  $("#anotherPizza").click(function() {
+    window.location.reload(false);
+  });
 });
